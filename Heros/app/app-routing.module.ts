@@ -9,7 +9,9 @@ const routes: Routes = [
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },
-  { path: 'runningtodo', component: RunningToDoComponent }
+  { path: 'runningtodo', component: RunningToDoComponent },
+    { path: 'adventures', component: RunningToDoComponent }
+
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
