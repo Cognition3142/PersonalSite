@@ -1,0 +1,46 @@
+h1 {
+  font-size: 2em;
+  color: #eee;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  /*margin: 5px 10px;*/
+  display: inline-block;
+  /*background-color: #eee;*/
+  color: #eee;  
+  /*border-radius: 4px;*/
+  text-transform: uppercase;
+  cursor: pointer;
+}
+nav a:visited, a:link {
+  /*color: #607D8B;*/
+}
+nav a:hover {
+  /*color: #039be5;*/
+  background-color: #00abc3;
+}
+nav a.active {
+  /*color: #039be5;*/
+  background-color: #00abc3;
+}
+
+.content {
+  margin: 2em;
+}
+
+.mainnavbar{
+  background: #00bcd4;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.name {
+  margin-left: 0.3em;
+}

@@ -1,0 +1,19 @@
+.selected {
+    background-color: #eee !important;
+    border: solid tomato;
+    border-width: 0 0 0 5px;
+    /*color: white;*/
+}
+
+.eventList md-list-item:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.eventContainer {
+    display: flex;
+}
+
+.eventDetailsContainer{
+    flex-grow: 1
+}
