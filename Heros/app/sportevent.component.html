@@ -1,0 +1,19 @@
+<md-card *ngIf="sportevent" class="sportevent-card">
+    <md-card-header>
+        <md-icon md-card-avatar [class.complete]="sportevent.complete">directions_bike</md-icon>
+        <md-card-title>{{sportevent.name}}</md-card-title>
+        <md-card-subtitle>{{sportevent.date}}<span *ngIf="sportevent.website"> - <a target="_blank" href='{{sportevent.website}}'>Event Details</a></span></md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+        <div>
+            <p>{{sportevent.description}}</p>
+            <p>{{sportevent.blog}}</p>
+        </div>
+    </md-card-content>
+</md-card>
+<md-card *ngIf="!sportevent" class="sportevent-card">
+    <md-card-content>
+        <p>No Activity Selected</p>
+        <p>Please Select One</p>
+    </md-card-content>
+</md-card>

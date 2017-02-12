@@ -2,7 +2,9 @@ export class SportEvent {
   id: number;  
   name: string;
   date: Date;
-  time: string;
+  finish_time: string;
   description: string;
-  blog: string;  
+  website: string;
+  blog: string;
+  completed: boolean;  
 }

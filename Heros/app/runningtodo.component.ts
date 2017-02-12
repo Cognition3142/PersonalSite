@@ -9,7 +9,8 @@ import { TriathlonService } from './triathlon.service';
     moduleId: module.id,
     selector: 'runningtodo',
     templateUrl: 'runningtodo.component.html',
-    styleUrls: ['runningtodo.component.css']
+    styleUrls: ['runningtodo.component.css'],
+    host: {'class': 'componentflex'}
 })
 
 export class RunningToDoComponent implements OnInit {
@@ -30,6 +31,6 @@ export class RunningToDoComponent implements OnInit {
     }
 
    onSelect(event: SportEvent): void {
-    this.selectedEvent = event;
+    this.selectedEvent = event;    
   }
 }

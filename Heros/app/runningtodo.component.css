@@ -1,8 +1,34 @@
+.sportactivitiescontent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: snow;
+    /*align-self: stretch;*/
+    /*max-width: 700px;*/
+}
+
+.initialmessage{
+    max-width: 800px;
+    margin: 0px 10px 10px 10px;
+}
+
+.initialmessage md-card-footer {
+    font-size: 12px;
+}
+
+.eventList{
+      overflow-y: auto;
+      padding: 5px 0px;
+}
+
+.eventList md-list-item {
+    border-width: 0 0 0 5px !important;
+    border: solid transparent;
+}
+
 .selected {
-    background-color: #eee !important;
-    border: solid cornflowerblue;
-    border-width: 0 0 0 5px;
-    /*color: white;*/
+    background-color: #eee;
+    border: solid cornflowerblue !important;
 }
 
 .eventList md-list-item:hover {
@@ -11,9 +37,39 @@
 }
 
 .eventContainer {
-    display: flex;
+    display: flex;    
+    max-width: 800px;
 }
 
 .eventDetailsContainer{
-    flex-grow: 1
+    flex-grow: 1;
+    margin: 40px 10px;
 }
+
+md-list-item.complete md-icon.material-icons {
+    color: #4ABDAC;
+}
+
+md-list-item.failed md-icon.material-icons {
+    color: #FC4A1A;
+}
+
+md-list-item md-icon.material-icons {
+  font-size: 40px !important; 
+  color: #F78733;
+}
+
+md-chip{
+    color: #fff;
+    width: 75px;
+    text-align: center;
+}
+
+md-chip.complete{
+    background-color: #4ABDAC;    
+}
+
+md-chip.upcoming{
+    background-color: #F78733;
+}
+

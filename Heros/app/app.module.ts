@@ -18,6 +18,7 @@ import { HeroesComponent }      from './heroes.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroSearchComponent }  from './hero-search.component';
 import { RunningToDoComponent } from './runningtodo.component';
+import { SportEventComponent }  from './sportevent.component';
 
 import { HeroService }          from './hero.service';
 import { RunningService }       from './running.service';
@@ -41,7 +42,8 @@ import { TriathlonService }     from './triathlon.service';
     HeroDetailComponent,
     HeroesComponent,
     HeroSearchComponent,
-    RunningToDoComponent
+    RunningToDoComponent,
+    SportEventComponent
   ],
   providers: [ HeroService, RunningService, CyclingService, TriathlonService ],
   bootstrap: [ AppComponent ]

@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'my-app',
   template: `
+  <div class="rootdiv">
   <div class="mainnavbar">
   <h1 class="name">{{title}}</h1>
   <nav>
@@ -14,8 +15,9 @@ import { Component } from '@angular/core';
     <a routerLink="/svgicons" routerLinkActive="active">SVG Icons</a>
   </nav>
   </div>
-  <div class="content">
+  <div class="fill-area content flexbox-item-grow">
   <router-outlet></router-outlet>
+  </div>
   </div>
   `,
   styleUrls: ['app.component.css']

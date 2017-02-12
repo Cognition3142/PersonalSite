@@ -1,47 +1,54 @@
-<md-card>
-    <md-card-content>
-
-        <div>
-            <span>
-        Inspired by completing my first marathon and cycling from LA to San Franciso in 2016,
-        I have decided on my 2017 sporting goal: Complete 12 marathon-like events.
-        (So I'm currently counting Marathons, Triathlons and 100mile Bike Rides as a marathon-like event.)
+<div class="sportactivitiescontent">
+    <md-card class="initialmessage">
+        <md-card-content>
+                <p>Inspired by completing my first marathon and cycling from LA to San Franciso in 2016,
+        I have decided on my 2017 sporting goal: <b>Complete 12 marathon events*</b>.
         I've decided to do this as an excuse to visit parts of the world I otherwise wouldn't, whilst 
         building upon the fitness I achieved in 2016. My first marathon was painful, exhausting and nausiating
         but so much fun all at the same time. 
-        This year will certainly be tough on my legs, but will be something I'll never forget. I may
-        even be the start of a life long addiction. 
-    </span>
+        This year will certainly be tough on my legs, but will be something I'll never forget. It may
+        even be the start of a life long addiction.
+                </p>
+        </md-card-content>
+        <md-card-footer>
+                <span>
+                    *I'm currently counting Marathons, Triathlons and 100mile Bike Rides as a marathon event
+                </span>
+        </md-card-footer>
+    </md-card>
+    <md-chip-list>
+        <md-chip class="complete">Complete</md-chip>
+        <md-chip class="upcoming">Upcoming</md-chip>
+    </md-chip-list>
+    <div class="eventContainer">
+        <md-list class="eventList">
+            <h3 md-subheader>Runs</h3>
+            <md-list-item *ngFor="let event of runs" (click)="onSelect(event)" [class.selected]="event === selectedEvent" [class.complete]="event.complete">
+                <md-icon md-list-avatar>directions_run</md-icon>
+                <h4 md-line>{{event.name}}</h4>
+                <p md-line> {{event.date}}</p>
+            </md-list-item>
+            <md-divider></md-divider>
+            <h3 md-subheader>Triathlons</h3>
+            <md-list-item *ngFor="let event of triathlons" (click)="onSelect(event)" [class.selected]="event === selectedEvent" [class.complete]="event.complete">
+                <!--<md-icon md-list-avatar>pool</md-icon>
+                <md-icon md-list-avatar>directions_bike</md-icon>
+                <md-icon md-list-avatar>directions_run</md-icon>-->
+                <md-icon md-list-avatar>group_work</md-icon>
+                <h4 md-line>{{event.name}}</h4>
+                <p md-line> {{event.date}} </p>
+            </md-list-item>
+            <md-divider></md-divider>
+            <h3 md-subheader>Cycling Sportives</h3>
+            <md-list-item *ngFor="let event of cycles" (click)="onSelect(event)" [class.selected]="event === selectedEvent" [class.complete]="event.complete">
+                <md-icon md-list-avatar>directions_bike</md-icon>
+                <h4 md-line>{{event.name}}</h4>
+                <p md-line> {{event.date}} </p>
+            </md-list-item>
+        </md-list>
+        <div class="eventDetailsContainer">
+            <sportevent *ngIf="selectedEvent" [sportevent]="selectedEvent"></sportevent>
+            <sportevent *ngIf="!selectedEvent"></sportevent>
         </div>
-    </md-card-content>
-</md-card>
-
-<div class="eventContainer">
-    <md-list class="eventList">
-        <h3 md-subheader>Runs</h3>
-        <md-list-item *ngFor="let event of runs" (click)="onSelect(event)" [class.selected]="event === selectedEvent">
-            <md-icon md-list-avatar>directions_run</md-icon>
-            <h4 md-line>{{event.name}}</h4>
-            <p md-line> {{event.date}} </p>
-        </md-list-item>
-        <md-divider></md-divider>
-        <h3 md-subheader>Triathlons</h3>
-        <md-list-item *ngFor="let event of triathlons" (click)="onSelect(event)" [class.selected]="event === selectedEvent">
-            <md-icon md-list-avatar>pool</md-icon>
-            <md-icon md-list-avatar>directions_bike</md-icon>
-            <md-icon md-list-avatar>directions_run</md-icon>
-            <h4 md-line>{{event.name}}</h4>
-            <p md-line> {{event.date}} </p>
-        </md-list-item>
-        <md-divider></md-divider>
-        <h3 md-subheader>Cycling Sportives</h3>
-        <md-list-item *ngFor="let event of cycles" (click)="onSelect(event)" [class.selected]="event === selectedEvent">
-            <md-icon md-list-avatar>directions_bike</md-icon>
-            <h4 md-line>{{event.name}}</h4>
-            <p md-line> {{event.date}} </p>
-        </md-list-item>
-    </md-list>
-<div class="eventDetailsContainer" style="background: cornflowerblue">
-
-</div>
+    </div>
 </div>
