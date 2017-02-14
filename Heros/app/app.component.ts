@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
   <div class="mainnavbar">
   <h1 class="name">{{title}}</h1>
   <nav>
-    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+    <a routerLink="/curriculumvitae" routerLinkActive="active">Curriculum Vitae</a>
     <a routerLink="/runningtodo" routerLinkActive="active">Endurance</a>
     <a routerLink="/adventures" routerLinkActive="active">Adventures</a>
     <a routerLink="/svgicons" routerLinkActive="active">SVG Icons</a>
@@ -25,3 +24,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Elliot Wilkinson';
 }
+    // <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    // <a routerLink="/heroes" routerLinkActive="active">Heroes</a>

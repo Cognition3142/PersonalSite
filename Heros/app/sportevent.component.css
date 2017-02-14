@@ -1,12 +1,13 @@
 .sportevent-card {
-    width: 400px
+    width: 400px;
+    background-color: #EFEAEA;    
 }
 
 md-icon.material-icons.complete {
-    color: green;
+    color: #4ABDAC;
 }
 
 md-icon.material-icons {
   font-size: 40px !important; 
-  color: darkred;
+  color: #F78733;
 }

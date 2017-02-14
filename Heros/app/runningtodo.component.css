@@ -9,7 +9,7 @@
 
 .initialmessage{
     max-width: 800px;
-    margin: 0px 10px 10px 10px;
+    margin: 10px;
 }
 
 .initialmessage md-card-footer {
@@ -44,6 +44,7 @@
 .eventDetailsContainer{
     flex-grow: 1;
     margin: 40px 10px;
+    overflow-y: auto;
 }
 
 md-list-item.complete md-icon.material-icons {

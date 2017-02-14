@@ -4,13 +4,16 @@ import { DashboardComponent }   from './dashboard.component';
 import { HeroesComponent }      from './heroes.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { RunningToDoComponent } from './runningtodo.component';
+import { CurriculumVitaeComponent } from './curriculum-vitae.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },
   { path: 'runningtodo', component: RunningToDoComponent },
-    { path: 'adventures', component: RunningToDoComponent }
+    { path: 'adventures', component: RunningToDoComponent },
+    {path: 'curriculumvitae', component: CurriculumVitaeComponent }
 
 ];
 @NgModule({

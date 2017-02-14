@@ -4,10 +4,15 @@
         <md-card-title>{{sportevent.name}}</md-card-title>
         <md-card-subtitle>{{sportevent.date}}<span *ngIf="sportevent.website"> - <a target="_blank" href='{{sportevent.website}}'>Event Details</a></span></md-card-subtitle>
     </md-card-header>
+    <img md-card-image src={{sportevent.img}}>
     <md-card-content>
         <div>
-            <p>{{sportevent.description}}</p>
-            <p>{{sportevent.blog}}</p>
+        <span><b>Description</b></span><md-divider></md-divider>
+                    <p>{{sportevent.description}}</p>
+        </div>
+        <div *ngIf="sportevent.racereport">
+            <span><b>Race Report</b></span><md-divider></md-divider>
+            <p>{{sportevent.racereport}}</p>
         </div>
     </md-card-content>
 </md-card>
