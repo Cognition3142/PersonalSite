@@ -17,6 +17,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 1, name: 'Gran Canaria Marathon', date: '22/01/2017',
         website: 'http://grancanariamaraton.com/web/en/',
+        strava: 'https://www.strava.com/activities/840707807',
         description: 'Marathon around Las Palmas de Gran Canaria - dubbed Europe\'s Warmest Winter Marathon. My first road marathon and first of 2017. Great chance to escape England\'s cold Janurary weather!',
         complete: true,
         racereport: 'TODO',

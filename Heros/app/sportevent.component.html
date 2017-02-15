@@ -2,7 +2,10 @@
     <md-card-header>
         <md-icon md-card-avatar [class.complete]="sportevent.complete">directions_bike</md-icon>
         <md-card-title>{{sportevent.name}}</md-card-title>
-        <md-card-subtitle>{{sportevent.date}}<span *ngIf="sportevent.website"> - <a target="_blank" href='{{sportevent.website}}'>Event Details</a></span></md-card-subtitle>
+        <md-card-subtitle>{{sportevent.date}}
+            <span *ngIf="sportevent.website"> - <a target="_blank" href='{{sportevent.website}}'>Event Details</a></span>
+            <span *ngIf="sportevent.strava"> - <a target="_blank" href='{{sportevent.strava}}'>Strava</a></span>
+        </md-card-subtitle>
     </md-card-header>
     <img md-card-image src={{sportevent.img}}>
     <md-card-content>
