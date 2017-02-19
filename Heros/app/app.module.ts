@@ -10,6 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
+import { PdfViewerComponent } from 'ng2-pdf-viewer';
+// import { Marked } from 'marked';
+// import { MarkdownModule } from 'angular2-markdown';
+
 import './rxjs-extensions';
 
 import { AppComponent }         from './app.component';
@@ -35,7 +39,9 @@ import { TriathlonService }     from './triathlon.service';
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    // Marked
+    // MarkdownModule.forRoot()
   ],
   declarations: [
     AppComponent,
@@ -45,7 +51,8 @@ import { TriathlonService }     from './triathlon.service';
     HeroSearchComponent,
     RunningToDoComponent,
     SportEventComponent,
-    CurriculumVitaeComponent
+    CurriculumVitaeComponent,
+    PdfViewerComponent
   ],
   providers: [ HeroService, RunningService, CyclingService, TriathlonService ],
   bootstrap: [ AppComponent ]

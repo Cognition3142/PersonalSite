@@ -1,0 +1,101 @@
+#cvmarkdown {
+    background-color: white;
+    padding: 10px;
+}
+
+#cvmarkdown > h1, 
+#cvmarkdown > h2, 
+#cvmarkdown > h3, 
+#cvmarkdown > h4, 
+#cvmarkdown > h5, 
+#cvmarkdown > h6 {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 0;
+    color: #373D49;
+}
+
+#cvmarkdown > h1 {
+    line-height: 3rem;
+    font-size: 2rem;
+    margin-bottom: .22rem;
+    padding-top: .78rem;
+    
+}
+
+#cvmarkdown > h2 {
+    line-height: 3rem;
+    font-size: 1.95rem;
+    margin-bottom: .18rem;
+    padding-top: .82rem;
+}
+
+#cvmarkdown > h5 {
+    line-height: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: -.5rem;
+    padding-top: .56rem;
+}
+
+#cvmarkdown > blockquote {
+    margin: 0;
+    line-height: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#cvmarkdown > blockquote > p {
+    font-size: 1rem;
+    margin-bottom: .34rem;
+    margin-top: 0;
+    font-style: italic;
+    font-family: Georgia,Cambria,serif;
+    padding: .66rem 1rem 1rem;
+    border-left: 3px solid #A0AABF;
+    color: #373D49;
+}
+
+#cvmarkdown > p {
+    margin-bottom: 1.34rem;
+    padding-bottom: .66rem;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Georgia;
+    color: #373D49;
+    line-height: 2rem;
+}
+
+#cvmarkdown > table {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Georgia,Cambria,serif;
+    color: #373D49;
+}
+
+#cvmarkdown > table > tbody > tr:nth-child(odd) > td, #cvmarkdown > table > tbody > tr:nth-child(odd) > th
+{
+    background-color: #f9f9f9;
+}
+
+#cvmarkdown > table > tbody > tr > th,
+#cvmarkdown > table > tbody > tr > td,
+#cvmarkdown > table > thead > tr > th,
+#cvmarkdown > table > thead > tr > td,
+#cvmarkdown > table > tfoot > tr > th,
+#cvmarkdown > table > tfoot > tr > td
+{
+    border: 1px solid #ddd;
+}
+
+#cvmarkdown > table > thead > tr > th,
+#cvmarkdown > table > tbody > tr > td {
+    padding: 8px;
+    line-height: 1.4;
+    vertical-align: top;
+}
