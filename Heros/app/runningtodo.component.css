@@ -1,10 +1,11 @@
-.sportactivitiescontent{
+.flexcolumn{
     display: flex;
-    align-items: center;
     flex-direction: column;
+}
+
+.sportactivitiescontent{
+    align-items: center;
     background-color: snow;
-    /*align-self: stretch;*/
-    /*max-width: 700px;*/
 }
 
 .initialmessage{
@@ -26,6 +27,10 @@
     border: solid transparent;
 }
 
+.eventList h3 {
+    background-color: #EFEAEA;
+}
+
 .selected {
     background-color: #eee;
     border: solid cornflowerblue !important;
@@ -43,7 +48,7 @@
 
 .eventDetailsContainer{
     flex-grow: 1;
-    margin: 40px 10px;
+    margin: 10px;
     overflow-y: auto;
 }
 
@@ -58,6 +63,12 @@ md-list-item.failed md-icon.material-icons {
 md-list-item md-icon.material-icons {
   font-size: 40px !important; 
   color: #F78733;
+}
+
+.chiplist {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 5px 0px;
 }
 
 md-chip{
