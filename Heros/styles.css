@@ -29,6 +29,7 @@ body, input[text], button {
 
 .componentflex{
   display: flex;
+  justify-content: center;
 }
 
 .curriculumvitae {

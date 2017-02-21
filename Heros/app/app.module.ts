@@ -8,27 +8,18 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
-
-import { PdfViewerComponent } from 'ng2-pdf-viewer';
-// import { Marked } from 'marked';
-// import { MarkdownModule } from 'angular2-markdown';
+import { InMemoryDataService }  from './services/in-memory-data.service';
 
 import './rxjs-extensions';
 
 import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './dashboard.component';
-import { HeroesComponent }      from './heroes.component';
-import { HeroDetailComponent }  from './hero-detail.component';
-import { HeroSearchComponent }  from './hero-search.component';
-import { RunningToDoComponent } from './runningtodo.component';
-import { SportEventComponent }  from './sportevent.component';
-import { CurriculumVitaeComponent } from './curriculum-vitae.component';
+import { RunningToDoComponent } from './components/runningtodo.component';
+import { SportEventComponent }  from './components/sportevent.component';
+import { CurriculumVitaeComponent } from './components/curriculum-vitae.component';
 
-import { HeroService }          from './hero.service';
-import { RunningService }       from './running.service';
-import { CyclingService }       from './cycling.service';
-import { TriathlonService }     from './triathlon.service';
+import { RunningService }       from './services/running.service';
+import { CyclingService }       from './services/cycling.service';
+import { TriathlonService }     from './services/triathlon.service';
 
 
 
@@ -45,16 +36,11 @@ import { TriathlonService }     from './triathlon.service';
   ],
   declarations: [
     AppComponent,
-    DashboardComponent,
-    HeroDetailComponent,
-    HeroesComponent,
-    HeroSearchComponent,
     RunningToDoComponent,
     SportEventComponent,
-    CurriculumVitaeComponent,
-    PdfViewerComponent
+    CurriculumVitaeComponent
   ],
-  providers: [ HeroService, RunningService, CyclingService, TriathlonService ],
+  providers: [ RunningService, CyclingService, TriathlonService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

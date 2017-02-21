@@ -3,12 +3,12 @@ import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { SportEvent } from './sportevent';
+import { SportEvent } from '../models/sportevent';
 
 @Injectable()
-export class CyclingService {
+export class TriathlonService {
 
-  private url = 'api/cycles';  // URL to web api
+  private url = 'api/triathlons';  // URL to web api
   private headers = new Headers({ 'Content-Type': 'application/json' });
 
   constructor(private http: Http) { }

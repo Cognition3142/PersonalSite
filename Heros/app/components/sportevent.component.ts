@@ -1,9 +1,9 @@
 import { Component, OnInit, Input  } from '@angular/core';
 
-import { SportEvent } from './sportevent';
-import { RunningService } from './running.service';
-import { CyclingService } from './cycling.service';
-import { TriathlonService } from './triathlon.service';
+import { SportEvent } from '../models/sportevent';
+import { RunningService } from '../services/running.service';
+import { CyclingService } from '../services/cycling.service';
+import { TriathlonService } from '../services/triathlon.service';
 
 @Component({
     moduleId: module.id,

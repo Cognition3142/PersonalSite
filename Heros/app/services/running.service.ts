@@ -3,7 +3,7 @@ import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { SportEvent } from './sportevent';
+import { SportEvent } from '../models/sportevent';
 
 @Injectable()
 export class RunningService {
